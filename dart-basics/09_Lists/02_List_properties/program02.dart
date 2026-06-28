@@ -1,4 +1,4 @@
-// iterator property	    Returns an iterator for the list.
+// iterator property => Returns an iterator for the list.
 void main() {
   List<String> languages = ['Dart', 'Python', 'JavaScript', 'Swift'];
 
@@ -15,7 +15,8 @@ void main() {
     print("\n2.Hashcode of the iterator: ");
     print(iterator.hashCode);
 
-    print("\n3.Hashcode of the list\n");
+    print("\n3.Hashcode of the list");
     print(languages.hashCode);
   
 }
+

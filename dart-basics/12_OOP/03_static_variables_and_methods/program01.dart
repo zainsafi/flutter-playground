@@ -1,4 +1,4 @@
-// static variable
+// static variable => Static variables belong to the class itself, not to individual objects.
 
 class Employee {
   static int totalEmployees = 0;

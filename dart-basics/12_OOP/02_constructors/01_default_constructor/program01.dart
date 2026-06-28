@@ -14,7 +14,6 @@ void main() {
 
 class Student {
   String? name;
-  int? rollNo;
 
   //Default constructor
   Student() {

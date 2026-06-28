@@ -4,7 +4,12 @@ void main() {
   Demo d1 = Demo();
   Demo d2 = Demo();
 
+  Demo.sety();
   d1.seta(10);
+  Demo.sety();
+
+  print('');
+  
   d2.seta(15);
   d1.showdata();
   d2.showdata();
@@ -12,7 +17,7 @@ void main() {
 }
 
 class Demo {
-  //Delaring variables
+  //Declaring variables
   late int a;
   static int y = 0;
 

@@ -7,12 +7,14 @@ void main(){
   num num3 = 8.25;
   num num4 = 0;
 
-//abs function
-//abs mean absolute which mean that if you enter a number in positive form only.
-//if u enter a negative number it will multiple -1 with it and will make it positive.
+// abs() function
+// abs() returns the absolute (non-negative) value of a number.
+// Positive numbers remain unchanged, while negative numbers
+// are converted to their positive equivalent.
   print("Absolute Value:");
   print(num2.abs());//10.6
   print(-2.abs());//-2
+  print((-2).abs());//2
   print((-99.109).abs());//99.109
 
   //floor function
@@ -66,29 +68,30 @@ void main(){
   var num5 = num1.toString();
   print(num5);print(num5.runtimeType);
 
-  print("");
+  print("\nmin function");
   //min function
   print(min(10, 20));
   print(min(20, min(25, 15)));
   
   //max function
-  print("");
+  print("\nmax function");
   print(max(30, 40));
 
   // sqrt()
-  print("");
+  print("\nsqrt function");
   print(sqrt(9));//3.0
   print(sqrt(100));
   //no built in method for cuber root so you can calculate it using pow function
 
   //pow()
-  print("");
+  print("\npow function");
   print(pow(5, 2));
 
   //sin()
   //Should pass value in radians not in degrees
   //so if you have value in degrees first convert it into radian 
   //and for that we use "toRadians" function e.g sin 90
+  print("\n sin function");
   double radians = 90 *(pi / 180);
   print(radians);
   print(sin(radians));
@@ -97,18 +100,20 @@ void main(){
   //Should pass value in radians not in degrees
   //so if you have value in degrees first convert it into radian 
   //and for that we use "toRadians" function
+  print("\n cos function");
   print(cos(radians));
 
   //tan function -> also take radians
+  print("\n tan function");
   print(tan(radians));
 
-  //pi function
+  //pi
   print("\nValue of pi: ");
   print(pi);
 
   //Random()
   //generate random numbers from 0 to the max
-  print("Generating random numbers");
+  print("\nGenerating random numbers");
   print(Random().nextInt(10));
   print(Random().nextDouble());//generate value b/w 0.0 and 1.0 i-e 0.0 <= x < 1.0
   print(Random().nextDouble() * 10);//nextDouble() doesn't take any argument

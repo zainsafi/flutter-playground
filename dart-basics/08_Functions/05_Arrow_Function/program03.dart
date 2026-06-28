@@ -5,7 +5,8 @@ Function addTwoNumbers = (int a, int b) {
   print("$a + $b = ${a + b}");
 };
 
-//best way to write like this 
+//best way to write like this => here we specify the return 
+// type aswell as the type of argument it will recieve
 int Function(int) multiplyByFour = (int num) {
   return num * 4;
 };
@@ -13,6 +14,12 @@ int Function(int) multiplyByFour = (int num) {
 // var multiplyByFour = (int num){
 //   return num * 4;
 // };
+
+// or you can also write the addTwoNumbers function like this
+//(best and most common way of writting a method in dart)
+// int addTwoNumbers(int a,int b){
+//   return a + b;
+// }
 
 //Method 2 -> Using short hand method or Fat arrow
 

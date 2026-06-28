@@ -1,4 +1,4 @@
-//Find sum of n numbers from 1 t0 n using for loop(increment operator)
+//Find sum of n numbers from 1 to n using for loop(increment operator)
 //sum of numbers from 1 to n
 //sum of even numbers from 1 to n
 //sum of odd numbers from 1 to n

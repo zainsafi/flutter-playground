@@ -7,7 +7,7 @@ void main() {
     print('Invalid input');
     return;
   }
-  String month = toSentenceCase(rawInput.trim());  // 👈 Call function here
+  String month = toSentenceCase(rawInput.trim());  // Call function here
   switch (month) {
     case 'January':
     case 'March':

@@ -3,8 +3,9 @@
 //map return a new array
 //toList() is used for converting an Iterable into a List
 import 'dart:io';
-void main(){
-  List<int> nums = [2,4,5,6,7,9];
+
+void main() {
+  List<int> nums = [2, 4, 5, 6, 7, 9];
   print("printing the original array: ");
   print(nums);
   print("forEach(action) → Executes action for each element.");
@@ -15,12 +16,19 @@ void main(){
   print("");
   print("modification 3");
   nums.forEach((n) => stdout.write("${n * 2} "));
-  print("\nprinting the original array again which show no change mean foreach doesn't modify the original array: ");
+  print(
+    "\nprinting the original array again which show no change mean foreach doesn't modify the original array: ",
+  );
   print("$nums");
+
   //map method
-  print("map method->lazy evaluation.so therefore we have used .toList with it");
+  print(
+    "map method->lazy evaluation.so therefore we have used .toList with it",
+  );
   print("printing update0");
-  var update0 = nums.map((n) => n * 0);//Here update0 is an iterable<int> not a list
+  var update0 = nums.map(
+    (n) => n * 0,
+  ); //Here update0 is an iterable<int> not a list
   //here print function forces the update0 and will print the updated result.
   //And therefore the result will look like (0,0,0,0,0,0)
   print(update0);
@@ -36,5 +44,4 @@ void main(){
   Iterable<int> update = nums.map((n) => n * 5);
   var saveUpdate = update.toList();
   print(saveUpdate);
-  
 }

@@ -22,18 +22,18 @@ void main() {
   print('');
 
   //where()
-  print(nums.where((n) => n > 30));//(40,50,60);
+  print(nums.where((n) => n > 30)); //(40,50,60);
   print('');
 
   //firstWhere()
-  print(nums.firstWhere((n) => n > 20));//30
-  print(nums.firstWhere((n) => n > 100 , orElse: () => -1));//-1
+  print(nums.firstWhere((n) => n > 20)); //30
+  print(nums.firstWhere((n) => n > 100, orElse: () => -1)); //-1
   print('');
 
   //lastWhere()
-  print(nums.lastWhere((n) => n > 20));//60
+  print(nums.lastWhere((n) => n > 20)); //60
   print('');
 
   //singleWhere()
-  print(nums.singleWhere((n) => n % 40 == 0));//40
+  print(nums.singleWhere((n) => n % 40 == 0)); //40
 }

@@ -25,7 +25,8 @@ void main(){
   print(st is! String);//false
 
   print("");
-  //as operator
+  // type casting operator
+  //as operator => converts (casts) an object to a specific type.
   dynamic value = "Hello";
   // TypeCast dynamic -> String
   String str= value as String;

@@ -4,7 +4,7 @@
 //   print(time);
 //   String Greetings = time >= 5 && time < 12 ? "Good Morning":
 //   time >=12 && time < 18 ? "Good Afternoon" :
-//time >= 18 && time < 22 ? "Good Evening" : "Good Night";
+//   time >= 18 && time < 22 ? "Good Evening" : "Good Night";
 //   print(Greetings);
 // }
 //////////////////////////////////////// OR //////////////////////////////////////////////////////////////

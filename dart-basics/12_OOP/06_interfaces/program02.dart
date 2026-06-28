@@ -29,6 +29,7 @@ class Car implements Vehicle {
 
   @override
   void changeGear(int newGear) => gear = newGear;
+
   @override
   void speedUp(int increasedSpeed) {
     speed += increasedSpeed;

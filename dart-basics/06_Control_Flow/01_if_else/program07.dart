@@ -4,9 +4,6 @@ void main(){
   print("Enter an alphabit");
   String? ch = stdin.readLineSync();
   if( ch == 'a'||
-      ch == 'b' ||
-      ch == 'c' ||
-      ch == 'd' ||
       ch == 'e' ||
       ch == 'i' ||
       ch == 'o' ||

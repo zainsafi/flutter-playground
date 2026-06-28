@@ -7,7 +7,7 @@ void main() {
   print('1. Original numbers created: $originalNumbers');
 
   // Step 2: Apply the .map() transformation.
-  // This line defines *how* each number should be processed,
+  // This line defines 'how' each number should be processed,
   // but it does NOT process them yet. This is the LAZY part.
   Iterable<int> transformedIterable = originalNumbers.map((number) {
     // This print statement is inside the transformation function.
@@ -20,8 +20,13 @@ void main() {
     return number * 2 + 100; // A simple transformation
   });
 
-  print('2. .map() called. A lazy Iterable was created. No calculations performed yet.');
-  print('   The content of transformedIterable is: $transformedIterable (This just shows its type, not computed values)');
+  print(
+    '2. .map() called. A lazy Iterable was created. No calculations performed yet.',
+  );
+  print(
+    '''   The content of transformedIterable is: $transformedIterable (This just shows 
+  its type, not computed values)''',
+  );
 
   // Step 3: We are now going to access the results by converting to a List.
   // This is the point where the LAZY evaluation stops being lazy
@@ -33,8 +38,10 @@ void main() {
   print('   Final result list: $finalResultList');
 
   // Step 5: What if we iterate directly over the lazy Iterable again?
-  // The calculations will happen *again* for each element as we iterate.
-  print('\n5. Iterating over the transformedIterable again (lazy re-evaluation):');
+  // The calculations will happen 'again' for each element as we iterate.
+  print(
+    '\n5. Iterating over the transformedIterable again (lazy re-evaluation):',
+  );
   for (var value in transformedIterable) {
     print('   Accessed value: $value');
   }

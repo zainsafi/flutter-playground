@@ -1,5 +1,5 @@
 // input size and elements of the list from the user and then print list.
-//second approach
+// second approach
 import 'dart:io';
 
 void main() {

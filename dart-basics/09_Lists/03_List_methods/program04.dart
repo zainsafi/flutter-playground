@@ -2,8 +2,8 @@
 void main(){
   List<int> nums = [10, 20, 30, 20];
   print("indexOf(element, [start]) → Returns the first index of element");
-  print(nums.indexOf(20)); //By default start from index 0 // 1
-  print(nums.indexOf(20,2));//start from index 2 // 3
+  print(nums.indexOf(20)); //By default start from index 0   // 1
+  print(nums.indexOf(20,2));//start from index 2   // 3
     
   print("lastIndexOf(element, [start]) → Returns the last index of element");
   print(nums.lastIndexOf(20));    // 3

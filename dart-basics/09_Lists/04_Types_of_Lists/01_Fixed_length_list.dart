@@ -1,6 +1,7 @@
 // There are two main types of Lists
 // 1. Fixed Length List    2. Growable List
-// 1.Fixed Length List -> In a growable list
+
+// 1.Fixed Length List -> In a fixed length list
 // => The size is declared at creation.
 // => The list cannot grow or shrink later.
 // => Elements can be updated, but you cannot add or remove elements.

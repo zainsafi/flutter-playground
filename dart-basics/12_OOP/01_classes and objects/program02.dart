@@ -13,8 +13,9 @@ void main() {
 class Calculation {
   late int a, b;
   setData() {
-    print("Enter the value of a and b");
+    print("Enter the value of a");
     a = int.parse(stdin.readLineSync()!);
+    print("Enter the value of b");
     b = int.parse(stdin.readLineSync()!);
   }
 
