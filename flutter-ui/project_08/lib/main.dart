@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: AppView());
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: AppView(),
+    );
   }
 }
 
@@ -42,7 +45,7 @@ class _AppViewState extends State<AppView> {
   ];
   addItem() {
     setState(() {
-      friendList.add(friendListController.text);
+      friendList.insert(0, friendListController.text);
       friendListController.clear();
     });
   }
@@ -52,8 +55,6 @@ class _AppViewState extends State<AppView> {
       friendList.removeAt(removeItem);
     });
   }
-
-  editItem(int index) {}
 
   @override
   Widget build(BuildContext context) {
@@ -87,14 +88,14 @@ class _AppViewState extends State<AppView> {
             color: Colors.red,
             child: Center(
               child: Text(
-                "I’m just a red container… why are you \nstaring at me like that? 🙈😳",
+                "I'm just a red container… why are you \nstaring at me like that? 🙈😳",
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
           ),
           Expanded(
             child: ListView.builder(
-              // shrinkWrap: true,//first method to make the screen scollable
+              // shrinkWrap: true, // first method to make the screen scollable
               // but due to it the whole screen will scroll.
               // second method is to use expanded.
               // physics: NeverScrollableScrollPhysics(),

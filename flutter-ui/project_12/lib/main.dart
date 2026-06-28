@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp> {
             "Lottery App",
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           ),
-          // leadingWidth: 155, used when  the text in taken in leading
+          // leadingWidth: 155, used when  the text is taken in leading
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,

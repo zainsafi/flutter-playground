@@ -53,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
             DropdownButton<String>(
               isExpanded: true,
               value: selected,
-              hint: Text("Enter UserType"),
+              hint: Text("Select UserType"),
               items: usertype
                   .map(
                     (e) => DropdownMenuItem<String>(value: e, child: Text(e)),
@@ -68,13 +68,13 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 20),
             InkWell(
               onTap: () async {
-                //here i just practice future function and call the abc future function
+                //here i just practiced future function and call the abc future function
                 // abc();
 
                 SharedPreferences sp = await SharedPreferences.getInstance();
                 sp.setString('name', namecontroller.text.toString());
                 sp.setString('email', emailcontroller.text.toString());
-                sp.setString('type ', selected.toString());
+                sp.setString('type', selected.toString());
                 sp.setBool('islogin', true);
 
                 if (selected == "Admin") {

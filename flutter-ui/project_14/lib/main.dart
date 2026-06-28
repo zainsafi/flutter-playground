@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
                   color: Colors.blue,
                 ),
                 Positioned(
-                  top: 0,
+                  top: 4,
                   left: 10,
                   child: Text(
                     "Box 1: InnerMost Box",

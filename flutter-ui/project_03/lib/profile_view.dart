@@ -15,9 +15,14 @@ class ProfileView extends StatelessWidget {
         ),
       ),
       body: Container(
-        color: Colors.blue.shade50,
-
+        // color: Colors.blue.shade100,
+        margin: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: Colors.blue.shade100,
+          borderRadius: BorderRadius.circular(40),
+        ),
         child: Column(
+          
           mainAxisSize: MainAxisSize.max, //default but you can change it.
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue.withValues(alpha: 0.1),
+        backgroundColor: Colors.blue.withValues(alpha: 0.2),
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: Text("Container Properties"),

@@ -24,13 +24,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         resizeToAvoidBottomInset:
             true, //by default true so we use single child scroll view
         backgroundColor: Colors.white,
-        body: SingleChildScrollView(
-          padding: EdgeInsets.only(top: 70),
+        body: Align(
+          alignment: Alignment.center,
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               //CircleAvatar
@@ -68,14 +70,16 @@ class MyApp extends StatelessWidget {
                   // showCursor: false,
                   minLines: 1,
                   maxLines: 2,
-                  expands:
-                      false, //By default expands is false when minlines or maxlines are defined,while it
-                  //is by default true when these are not defined.
+
+                  // By default expands is false. It requires minLines and
+                  // maxLines to be set to null, and it requires the parent widget to
+                  // enforce a strict height constraint so wrap inside a size box or contianer to
+                  // it some fixed height.
+                  expands: false,
                   autofocus: true,
                   maxLength: 100,
 
                   maxLengthEnforcement: MaxLengthEnforcement.enforced,
-
                   style: TextStyle(color: Colors.blue, fontSize: 15),
 
                   decoration: InputDecoration(
@@ -115,9 +119,7 @@ class MyApp extends StatelessWidget {
                   // showCursor: false,
                   minLines: 1,
                   maxLines: 2,
-                  expands:
-                      false, //By default expands is false when minlines or maxlines are defined,while it
-                  //is by default true when these are not defined.
+                  expands: false,
                   autofocus: true,
                   maxLength: 40,
                   maxLengthEnforcement: MaxLengthEnforcement.none,
@@ -187,7 +189,7 @@ class MyApp extends StatelessWidget {
               SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                spacing: 20,
+                spacing: 25,
                 children: [
                   // Custom Google-style icon
                   // Container(

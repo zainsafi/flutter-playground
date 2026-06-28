@@ -11,7 +11,7 @@ class TeacherScreen extends StatefulWidget {
 }
 
 class _TeacherScreenState extends State<TeacherScreen> {
-  String name = '', email = '';
+  String? name = '', email = '';
 
   @override
   void initState() {
@@ -38,21 +38,20 @@ class _TeacherScreenState extends State<TeacherScreen> {
 
       //body
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //text
           Row(
             spacing: 40,
             children: [
               Text("Name: ", style: tstyle),
-              Text(name, style: tstyle),
+              Text(name!, style: tstyle),
             ],
           ),
           Row(
             spacing: 40,
             children: [
               Text("email: ", style: tstyle),
-              Text(email, style: tstyle),
+              Text(email!, style: tstyle),
             ],
           ),
           Spacer(),

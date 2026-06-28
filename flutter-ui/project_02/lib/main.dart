@@ -1,5 +1,6 @@
 // simple Flutter app demonstrating basic widgets, layout, and app icons.
 // Shows MaterialApp, Scaffold, AppBar, Center/Text, and BottomAppBar usage.
+// generate icons throught app icon generator website
 
 import 'package:flutter/material.dart';
 
@@ -14,11 +15,11 @@ void main() {
         ),
         body: Center(
           child: Text(
-            "Zain ul islam",
+            "Zain Ul Islam",
             style: TextStyle(
               color: Colors.teal,
               fontSize: 50,
-              fontWeight: FontWeight.bold
+              fontWeight: FontWeight.bold,
             ),
           ),
         ),

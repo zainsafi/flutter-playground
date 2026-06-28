@@ -16,7 +16,7 @@ class CustomTile extends StatelessWidget {
     return Container(
       height: 60,
       padding: EdgeInsets.only(left: 10, right: 10, top: 5),
-      margin: EdgeInsets.only(bottom: 5),
+      margin: EdgeInsets.only(top: 2, bottom: 4),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
@@ -36,16 +36,17 @@ class CustomTile extends StatelessWidget {
         color: Colors.green,
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        // mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CircleAvatar(
             radius: 25,
-            backgroundColor: Colors.red,
+            // backgroundColor: Colors.red,
             foregroundImage: AssetImage("assets/bird.jpg"),
           ),
           SizedBox(width: 10),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(name, style: TextStyle(fontWeight: FontWeight.bold)),
               Text(message),

@@ -37,6 +37,7 @@ class HomeView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
             spacing: 15,
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -45,7 +46,7 @@ class HomeView extends StatelessWidget {
                 child: TextField(
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.search_outlined),
-                    hintText: "Ask Meta AI or Search",
+                    hintText: "Ask Meta AI Or Search",
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide(style: BorderStyle.none),

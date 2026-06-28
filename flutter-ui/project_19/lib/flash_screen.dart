@@ -38,16 +38,16 @@ class _FlashScreenState extends State<FlashScreen> {
   void islogin() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
     bool islogin = sp.getBool('islogin') ?? false;
-    String UserType = sp.getString('type') ?? '';
+    String usertype = sp.getString('type') ?? '';
     if (islogin) {
-      if (UserType == "Admin") {
+      if (usertype == "Admin") {
         Timer(Duration(seconds: 3), () {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => AdminScreen()),
           );
         });
-      } else if (UserType == "Teacher") {
+      } else if (usertype == "Teacher") {
         Timer(Duration(seconds: 3), () {
           Navigator.push(
             context,

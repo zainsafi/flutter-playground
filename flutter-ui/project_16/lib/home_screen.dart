@@ -72,16 +72,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 // );
               },
               style: ButtonStyle(
-                textStyle: WidgetStatePropertyAll(TextStyle()),
+                textStyle: WidgetStatePropertyAll(
+                  TextStyle(fontSize: 23, fontWeight: FontWeight(1000)),
+                ),
                 backgroundColor: WidgetStateProperty.all(Colors.grey.shade300),
+                foregroundColor: WidgetStateProperty.all(Colors.deepPurple),
               ),
               child: Text(
                 "Go To Screen 1",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                // style: TextStyle(
+                //   color: Colors.black,
+                //   fontSize: 20,
+                //   fontWeight: FontWeight.bold,
+                // ),
               ),
             ),
           ],

@@ -7,8 +7,8 @@
   - Navigator.pushReplacementNamed()
   - Navigator.pop()
   - initialRoute
-  - Drawer navigation
-*/ 
+  - Drawer
+*/
 import 'package:flutter/material.dart';
 import 'package:project_16/home_screen.dart';
 import 'package:project_16/screen_one.dart';
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: HomeScreen.id,
       routes: {
         HomeScreen.id: (context) => HomeScreen(),

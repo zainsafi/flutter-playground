@@ -14,14 +14,16 @@ class ChatTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // padding: EdgeInsets.all(5),
       margin: EdgeInsets.only(bottom: 5),
+      decoration: BoxDecoration(
+        color: Colors.green,
+        borderRadius: BorderRadius.circular(10),
+      ),
       child: ListTile(
-        tileColor: Colors.green,
+        tileColor: Colors.white,
         leading: CircleAvatar(),
-        title: Padding(
-          padding: EdgeInsets.only(left: 20),
-          child: Text(name),
-        ),
+        title: Padding(padding: EdgeInsets.only(left: 20), child: Text(name)),
         subtitle: Padding(
           padding: EdgeInsets.only(left: 20),
           child: Text(message),

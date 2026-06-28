@@ -10,7 +10,7 @@ class FilterTextView extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       margin: EdgeInsets.symmetric(vertical: 9, horizontal: 6),
       decoration: BoxDecoration(
-        border: BoxBorder.all(),
+        border: BoxBorder.all(color: Colors.black, width: 0.5),
         borderRadius: BorderRadius.circular(30),
       ),
       child: Text(label, style: TextStyle(fontSize: 18)),

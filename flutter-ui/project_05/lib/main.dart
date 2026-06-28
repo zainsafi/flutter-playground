@@ -1,5 +1,5 @@
 /* In this project, we will learn to build a chat interface with user input 
-   and custom tiles without using listtile and circular avatar*/
+   and custom tiles without using listtile*/
 /* Custom Widgets, TextField decoration, Container styling, Row, Column,
  Spacer, SizedBox, SingleChildScrollView */
 
@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: ProfileView()
     );
   }

@@ -51,17 +51,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
           bottom: TabBar(
             tabAlignment: TabAlignment.start,
-            indicatorColor: Colors.transparent,
+            indicatorColor: Colors.grey.shade100,
+            indicatorPadding: EdgeInsetsGeometry.only(bottom: 14),
             labelColor: Colors.green,
 
             // indicator: BoxDecoration(
             //   color: Colors.grey,
             //   borderRadius: BorderRadius.circular(20),
             // ),
-            // indicatorPadding: EdgeInsetsGeometry.only(bottom: 5),
             overlayColor: WidgetStateProperty.all(Colors.transparent),
             isScrollable: true,
             dividerColor: Colors.transparent,
+            dividerHeight: 1,
             tabs: [
               Tab(child: Text("All")),
               Tab(child: Text("Unread")),
@@ -69,14 +70,14 @@ class _HomeScreenState extends State<HomeScreen> {
               Tab(child: Text("Groups")),
               Tab(child: Text("Study groups")),
               Tab(
-                child: Text(
-                  "+",
-                  style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 25,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
+                child: Icon(Icons.add),
+                // Text(
+                //   "+",
+                //   style: TextStyle(
+                //     fontSize: 25,
+                //     fontWeight: FontWeight.w400,
+                //   ),
+                // ),
               ),
             ],
           ),

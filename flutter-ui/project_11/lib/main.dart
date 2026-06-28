@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: [
                 Row(
+                  mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 13,
                   children: [
@@ -60,7 +61,7 @@ class MyApp extends StatelessWidget {
                             color: Color(0xffF9703B),
                             fontFamily: "Rubik Medium",
                           ),
-                          textAlign: TextAlign.left,
+                          // textAlign: TextAlign.left,
                         ),
                       ],
                     ),

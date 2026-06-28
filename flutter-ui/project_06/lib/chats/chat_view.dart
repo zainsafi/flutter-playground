@@ -63,6 +63,8 @@ class ChatView extends StatelessWidget {
   }
 }
 
+// you should put it into another file which is a good practice
+// it's just a demonstration that you can do it in the same file aswell.
 class ChatTile extends StatelessWidget {
   final String name;
   final String message;

@@ -40,32 +40,37 @@ class _AdminScreenState extends State<AdminScreen> {
 
       //body
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //text
-          Row(
-            spacing: 40,
-            children: [
-              Text("Name: ", style: tstyle),
-              Text(name, style: tstyle),
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              spacing: 40,
+              children: [
+                Text("Name: ", style: tstyle),
+                Text(name, style: tstyle),
+              ],
+            ),
           ),
-          Row(
-            spacing: 40,
-            children: [
-              Text("email: ", style: tstyle),
-              Text(email, style: tstyle),
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              spacing: 40,
+              children: [
+                Text("email: ", style: tstyle),
+                Text(email, style: tstyle),
+              ],
+            ),
           ),
           Spacer(),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
             //inkwell
             child: InkWell(
               onTap: () async {
                 SharedPreferences sp = await SharedPreferences.getInstance();
                 sp.clear();
-                Navigator.push(
+                Navigator.pop(
                   context,
                   MaterialPageRoute(builder: (context) => LoginScreen()),
                 );

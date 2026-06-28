@@ -17,7 +17,9 @@ class _HomeViewState extends State<HomeView> {
   void equalpress() {
     String finalInput = userinput.replaceAll("x", "*");
     // Parser p = Parser(); //depreciated
-    GrammarParser p = GrammarParser();
+
+    // GrammarParser p = GrammarParser(); // or
+    ExpressionParser p = GrammarParser();
     Expression expression = p.parse(finalInput);
     ContextModel contextModel = ContextModel();
 
@@ -251,9 +253,6 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
-
-
-
 
 //practicing components
 // class HomeView extends StatefulWidget {
