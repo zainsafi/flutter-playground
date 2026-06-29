@@ -15,6 +15,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int counter = 0;
+  bool centerTitle = true;
+  bool smallCounterText = true;
   void incrementCounter() {
     counter++;
   }
@@ -30,6 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Buttons in flutter'),
+        centerTitle: centerTitle,
         actions: [
           //icon button
           IconButton(
@@ -45,13 +48,35 @@ class _HomeScreenState extends State<HomeScreen> {
           spacing: 20,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              counter.toString(),
-              style: Theme.of(context).textTheme.displayLarge,
+            // text button
+            TextButton(
+              style: TextButton.styleFrom(
+                textStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              ),
+              onPressed: () {
+                smallCounterText = !smallCounterText;
+                setState(() {});
+              },
+              child: Text('click me'),
             ),
+            smallCounterText
+                ? Text(
+                    counter.toString(),
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal,
+                    ),
+                  )
+                : Text(
+                    counter.toString(),
+                    style: Theme.of(context).textTheme.displayLarge,
+                  ),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+                // elevated button
                 ElevatedButton(
                   onPressed: () {
                     decrementCounter();
@@ -69,7 +94,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+
+                // elevated button with icon
                 ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.deepPurple,
+                    foregroundColor: Colors.white,
+                    alignment: Alignment.center,
+                    iconAlignment: IconAlignment.end,
+                    iconColor: Colors.yellow,
+                    iconSize: 20,
+                  ),
+
                   onPressed: () {
                     incrementCounter();
                     setState(() {});
@@ -79,6 +115,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
+
+            // outline button
             OutlinedButton(
               onPressed: () {
                 counter = 0;
@@ -88,6 +126,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
         ),
+      ),
+
+      // floating action button
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          centerTitle = !centerTitle;
+          setState(() {});
+        },
+        child: Icon(Icons.swipe),
       ),
     );
   }
