@@ -9,7 +9,11 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int index = 0;
-  List<String> items = ["Drawer And Bottom Navigation Bar", "setting,account"];
+  List<String> items = [
+    "Drawer And Bottom Navigation Bar",
+    "Settings",
+    "Account",
+  ];
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
@@ -83,9 +87,14 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Icon(Icons.favorite_sharp, size: 100, color: Colors.red),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.purple,
+        onTap: (value) {
+          index = value;
+          setState(() {});
+        },
         backgroundColor: Colors.teal.shade300,
         selectedIconTheme: IconThemeData(size: 32),
+        selectedItemColor: Colors.purple,
+        currentIndex: index,
 
         items: [
           BottomNavigationBarItem(label: 'home', icon: Icon(Icons.home)),
