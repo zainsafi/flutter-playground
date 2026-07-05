@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
       theme: LightTheme.lightTheme,
       darkTheme: DarkTheme.darkTheme,
       themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
-      home: HomeScreen(),
+      home: HomeScreen(toggleTheme: toggleTheme, isDarkMode: isDarkMode),
     );
   }
 }
