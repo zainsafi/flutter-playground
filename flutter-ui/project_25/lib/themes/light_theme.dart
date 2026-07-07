@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class LightTheme {
   static ThemeData lightTheme = ThemeData(
+    useMaterial3: true,
     brightness: Brightness.light,
 
     // COLOR SCHEME
