@@ -12,7 +12,7 @@
 // role you want. e.g
 // Container, SizedBox, Padding, Row, Column, Center, Stack, Expanded
 
-// Not focusing on design
+// Here in this project we will be not focusing on design
 
 import 'package:flutter/material.dart';
 import 'package:project_24/home_screen.dart';
