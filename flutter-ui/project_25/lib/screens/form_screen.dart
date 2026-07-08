@@ -27,7 +27,6 @@ class _FormScreenState extends State<FormScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
 
           children: [
-            
             // TEXT FIELD
             Text('Text Field', style: Theme.of(context).textTheme.titleLarge),
 
@@ -65,26 +64,26 @@ class _FormScreenState extends State<FormScreen> {
               style: Theme.of(context).textTheme.titleLarge,
             ),
 
-            RadioListTile<String>(
-              value: 'Male',
+            RadioGroup(
               groupValue: selectedGender,
               onChanged: (value) {
                 setState(() {
                   selectedGender = value!;
                 });
               },
-              title: const Text('Male'),
-            ),
+              child: Column(
+                children: [
+                  RadioListTile<String>(
+                    value: 'Male',
+                    title: const Text('Male'),
+                  ),
 
-            RadioListTile<String>(
-              value: 'Female',
-              groupValue: selectedGender,
-              onChanged: (value) {
-                setState(() {
-                  selectedGender = value!;
-                });
-              },
-              title: const Text('Female'),
+                  RadioListTile<String>(
+                    value: 'Female',
+                    title: const Text('Female'),
+                  ),
+                ],
+              ),
             ),
 
             const SizedBox(height: 20),

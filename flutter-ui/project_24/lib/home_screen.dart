@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
               color: kColors.secondary,
               child: Center(
                 child: Text(
-                  'Primary',
+                  'Secondary',
                   style: TextStyle(color: kColors.onSecondary),
                 ),
               ),
@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
               color: kColors.primaryContainer,
               child: Center(
                 child: Text(
-                  'Primary',
+                  'Primary Container',
                   style: TextStyle(color: kColors.onPrimaryContainer),
                 ),
               ),
@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
               color: kColors.tertiary,
               child: Center(
                 child: Text(
-                  'Primary',
+                  'Tertiary',
                   style: TextStyle(color: kColors.onTertiary),
                 ),
               ),
