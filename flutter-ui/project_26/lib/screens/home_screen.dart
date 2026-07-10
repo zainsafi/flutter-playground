@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_26/screens/form_screen.dart';
+import 'package:project_26/screens/setting_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final bool isDarkMode;
@@ -230,7 +231,17 @@ class _HomeScreenState extends State<HomeScreen> {
               child: const Text('Open Form Components'),
             ),
 
-            
+            const SizedBox(height: 10),
+
+            OutlinedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SettingScreen()),
+                );
+              },
+              child: const Text('Open Settings Components'),
+            ),
           ],
         ),
       ),
