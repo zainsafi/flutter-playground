@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_26/screens/home_screen.dart';
+import 'package:project_26/themes/light_theme.dart';
 
 
 void main() {
@@ -25,7 +26,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
+      theme: LightTheme.lightTheme,
       darkTheme: ThemeData.dark(),
       themeMode: isDarkMode ? ThemeMode.dark:ThemeMode.dark,
       home: HomeScreen(isDarkMode: isDarkMode, toggleTheme: toggleTheme),
