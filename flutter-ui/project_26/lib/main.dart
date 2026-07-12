@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_26/screens/home_screen.dart';
+import 'package:project_26/themes/dark_theme.dart';
 import 'package:project_26/themes/light_theme.dart';
-
 
 void main() {
   runApp(MyApp());
@@ -27,8 +27,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: LightTheme.lightTheme,
-      darkTheme: ThemeData.dark(),
-      themeMode: isDarkMode ? ThemeMode.dark:ThemeMode.dark,
+      darkTheme: DarkTheme.darkTheme,
+      themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
       home: HomeScreen(isDarkMode: isDarkMode, toggleTheme: toggleTheme),
     );
   }
