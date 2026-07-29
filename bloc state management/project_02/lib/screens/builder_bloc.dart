@@ -45,6 +45,9 @@ class _HomeScreenState extends State<BuilderBloc> {
           ),
         ],
       ),
+
+      // for multiblocprovider you can here also use MultiBlocBuilder when needed
+      // same goes for the bloc listeners and bloc consumer as well.
       body: BlocBuilder<AuthBloc, AuthState>(
         builder: (context, state) {
           if (state is AuthLoadingState) {
@@ -100,7 +103,7 @@ class _HomeScreenState extends State<BuilderBloc> {
                     context.read<AuthBloc>().add(
                       LoginEvent(emailController.text, passwordController.text),
                     );
-                    
+
                     if (state is AuthSuccessState) {
                       emailController.clear();
                       passwordController.clear();

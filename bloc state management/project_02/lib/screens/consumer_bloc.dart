@@ -1,3 +1,4 @@
+// Authentication using flutter bloc state management
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project_02/bloc/auth_bloc.dart';
