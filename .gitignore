@@ -1,3 +1,50 @@
-.DS_Store
-.env
-.vscode/
+# ==========================================
+# Flutter / Dart Monorepo .gitignore
+# ==========================================
+
+# Flutter & Dart build artifacts anywhere in the repository
+**/build/
+**/.dart_tool/
+**/.pub-cache/
+**/.pub/
+**/pubspec.lock
+
+# Android build & key files
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/.gradle/
+**/android/local.properties
+**/android/captures/
+
+# iOS / macOS build artifacts & secrets
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/GeneratedPluginRegistrant.h
+**/ios/Flutter/GeneratedPluginRegistrant.m
+**/ios/Flutter/app.config
+**/ios/Runner.xcodeproj/project.xcworkspace
+**/ios/Runner.gitignore
+**/Pods/
+**/.symlinks/
+
+# IDE & Editor system files
+**/.idea/
+**/.vscode/
+**/*.iml
+**/*.ipr
+**/*.iws
+**/*.swp
+**/*.swo
+
+# OS generated files
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
+
+# Log files
+**/*.log
