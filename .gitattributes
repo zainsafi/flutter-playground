@@ -1,0 +1,10 @@
+# Exclude native platform boilerplate across all sub-projects
+**/windows/** linguist-vendored
+**/linux/** linguist-vendored
+**/macos/** linguist-vendored
+**/android/** linguist-vendored
+**/ios/** linguist-vendored
+
+# Exclude CMake build scripts
+**/CMakeLists.txt linguist-vendored
+**/*.cmake linguist-vendored
